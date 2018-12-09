@@ -1,0 +1,6 @@
+module Pods_QuizShow {
+  umbrella header "Pods-QuizShow-umbrella.h"
+
+  export *
+  module * { export * }
+}

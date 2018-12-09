@@ -1,0 +1,63 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - ObjectMapper (3.4.1)
+  - PromiseKit (6.5.3):
+    - PromiseKit/CorePromise (= 6.5.3)
+    - PromiseKit/Foundation (= 6.5.3)
+    - PromiseKit/UIKit (= 6.5.3)
+  - PromiseKit/CorePromise (6.5.3)
+  - PromiseKit/Foundation (6.5.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.5.3):
+    - PromiseKit/CorePromise
+  - SnapKit (4.2.0)
+  - SwiftWebSocket (2.7.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - NVActivityIndicatorView
+  - PromiseKit
+  - SnapKit
+  - SwiftWebSocket (from `https://github.com/tidwall/SwiftWebSocket`)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - PromiseKit
+    - SnapKit
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SwiftWebSocket:
+    :git: https://github.com/tidwall/SwiftWebSocket
+
+CHECKOUT OPTIONS:
+  SwiftWebSocket:
+    :commit: 1f3049d4958ffb4e7586e58e158fba80dec86ff7
+    :git: https://github.com/tidwall/SwiftWebSocket
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  PromiseKit: c609029bdd801f792551a504c695c7d3098b42cd
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftWebSocket: 612c9729fd503cb6b0b8b45390c788686dac306f
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 8f25d60903c58929c5e45545b48823ad0c80e773
+
+COCOAPODS: 1.5.3
