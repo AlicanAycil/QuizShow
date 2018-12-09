@@ -148,6 +148,11 @@ class HomeViewController: BaseViewController {
         startButton.layer.borderColor = UIColor.white.cgColor
         startButton.layer.cornerRadius = 10
         startButton.sizeToFit()
+        startButton.addTarget(for: .touchUpInside) { (button) in
+            let controller = AppStoryboard.Home.view(controllerClass: QuestionsViewController.self)
+            let rootController = UINavigationController(rootViewController: controller)
+            self.present(rootController, animated: true, completion: nil)
+        }
         self.startButtonBgView.addSubview(startButton)
         
         self.dataSource.addAndNotify(observer: self) { [weak self] in

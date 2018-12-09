@@ -14,7 +14,8 @@ public enum CoreRouter : URLRequestConvertible {
     static let baseUrl = "https://demo9240527.mockable.io"
     
     case GetUser()
-    
+    case GetQuestions()
+    case GetWinners()
     
     var method: Alamofire.HTTPMethod {
         return .get
@@ -24,6 +25,10 @@ public enum CoreRouter : URLRequestConvertible {
         switch self {
         case .GetUser():
             return "/user"
+        case .GetQuestions():
+            return "/questions"
+        case .GetWinners():
+            return "/questions"
         }
     }
     
@@ -33,7 +38,9 @@ public enum CoreRouter : URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
         
         switch self {
-        case .GetUser():
+        case .GetUser(),
+             .GetQuestions(),
+             .GetWinners():
             //            urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             return try Alamofire.JSONEncoding.default.encode(urlRequest)
         }
