@@ -27,6 +27,7 @@ class QuestionsViewController: BaseViewController {
     lazy var questionIndex = 0
     var selectedAnswerIndex: Int?
     lazy var jokerNumber = 0
+    lazy var isJokerUsed = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,13 +117,21 @@ class QuestionsViewController: BaseViewController {
                     } else if item.IsTrue && selectedAnswerIndex != index+1 {
                         (self.tableView.visibleCells[selectedAnswerIndex!] as! QuestionViewCell).bgView.backgroundColor = .piStrongRed
                         (self.tableView.visibleCells[index+1] as! QuestionViewCell).bgView.backgroundColor = .piGreen
-                        self.openAlert()
+                        if self.jokerNumber > 0 && isJokerUsed  {
+                            self.continueCompetition(onlyWatch: true)
+                        } else {
+                           self.openAlert()
+                        }
                     }
                 } else {
                     if item.IsTrue {
                         self.selectedAnswerIndex = 0
                         (self.tableView.visibleCells[index+1] as! QuestionViewCell).bgView.backgroundColor = .piStrongRed
-                        self.openAlert()
+                        if self.jokerNumber > 0 && isJokerUsed {
+                            self.continueCompetition(onlyWatch: true)
+                        } else {
+                            self.openAlert()
+                        }
                     }
                 }
             }
@@ -132,9 +141,15 @@ class QuestionsViewController: BaseViewController {
         DispatchQueue.main.asyncAfter(deadline: .now()+1) {
             if !onlyWatch {
                 self.selectedAnswerIndex = nil
+            } else {
+                self.selectedAnswerIndex = 0
             }
             self.questionIndex += 1
-            self.tableView.reloadData()
+            if self.questionIndex == self.dataSource.value.count {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -142,9 +157,11 @@ class QuestionsViewController: BaseViewController {
         let alert = UIAlertController(title: "Uyarı", message: "Joker kullanarak yarışmaya devam etmek ister misiniz?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Devam Et", style: .default, handler: { a in
             self.jokerNumber -= 1
+            self.isJokerUsed = true
             self.continueCompetition(onlyWatch: false)
         }))
         alert.addAction(UIAlertAction(title: "İptal", style: .default, handler: { a in
+            self.isJokerUsed = true
             self.continueCompetition(onlyWatch: true)
         }))
         self.present(alert, animated: true, completion: nil)
@@ -169,7 +186,7 @@ extension QuestionsViewController: UITableViewDelegate, UITableViewDataSource {
 
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionHeaderViewCell", for: indexPath) as! QuestionHeaderViewCell
-            let headermodel = QuestionHaderModel(question: self.dataSource.value[self.questionIndex].Question, questionNumber: self.dataSource.value.count, questionIndex: self.questionIndex+1, jokerNumber: 4)
+            let headermodel = QuestionHaderModel(question: self.dataSource.value[self.questionIndex].Question, questionNumber: self.dataSource.value.count, questionIndex: self.questionIndex+1, jokerNumber: self.jokerNumber)
             cell.set(headerModel: headermodel)
             cell.controller = self
             cell.selectionStyle = .none
