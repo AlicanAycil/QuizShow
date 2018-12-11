@@ -64,7 +64,23 @@ extension UIColor {
         return UIColor(hex: "#00d8ff")!
     }
     
+    class var piSoftBlue: UIColor {
+        return UIColor(hex: "#9bd0ff")!
+    }
+
     class var piYellow: UIColor {
         return UIColor(hex: "#dba230")!
+    }
+    
+    class var piRed: UIColor {
+        return UIColor(hex: "#b2183f")!
+    }
+    
+    class var piStrongRed: UIColor {
+        return UIColor(hex: "#e2261c")!
+    }
+    
+    class var piGreen: UIColor {
+        return UIColor(hex: "#59E593")!
     }
 }

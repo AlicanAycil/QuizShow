@@ -19,6 +19,7 @@ PODS:
   - SnapKit (4.2.0)
   - SwiftWebSocket (2.7.0)
   - SwiftyJSON (4.2.0)
+  - UICircularProgressRing (4.1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - SnapKit
   - SwiftWebSocket (from `https://github.com/tidwall/SwiftWebSocket`)
   - SwiftyJSON
+  - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -38,6 +40,7 @@ SPEC REPOS:
     - PromiseKit
     - SnapKit
     - SwiftyJSON
+    - UICircularProgressRing
 
 EXTERNAL SOURCES:
   SwiftWebSocket:
@@ -57,7 +60,8 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftWebSocket: 612c9729fd503cb6b0b8b45390c788686dac306f
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  UICircularProgressRing: 5a32c01f54474571b1e66e8fa050c0f83d6d981b
 
-PODFILE CHECKSUM: 8f25d60903c58929c5e45545b48823ad0c80e773
+PODFILE CHECKSUM: 648d7ea0bbcb61a2a7196a39aa1c083b9c5ca00f
 
 COCOAPODS: 1.5.3

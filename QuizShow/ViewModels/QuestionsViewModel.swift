@@ -8,6 +8,20 @@
 
 import Foundation
 
+struct QuestionHaderModel {
+    var Question: String!
+    var QuestionNumber: Int!
+    var QuestionIndex: Int!
+    var JokerNumber: Int!
+    
+    init(question: String!, questionNumber: Int!, questionIndex: Int!, jokerNumber: Int!) {
+        Question = question
+        QuestionNumber = questionNumber
+        QuestionIndex = questionIndex
+        JokerNumber = jokerNumber
+    }
+}
+
 struct QuestionsViewModel {
     
     weak var dataSource: DynamicValue<[QuestionModel]>?

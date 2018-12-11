@@ -11,7 +11,6 @@
 		B5215E7B21BD339C00531898 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E7A21BD339C00531898 /* UIColor.swift */; };
 		B5215E7D21BD5C0900531898 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E7C21BD5C0900531898 /* HomeViewController.swift */; };
 		B5215E7F21BD5D4D00531898 /* WinnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E7E21BD5D4D00531898 /* WinnersViewController.swift */; };
-		B5215E8121BD5DB900531898 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5215E8021BD5DB900531898 /* Home.storyboard */; };
 		B5215E8421BD75F600531898 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E8321BD75F600531898 /* DynamicValue.swift */; };
 		B5215E8821BD761800531898 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E8721BD761800531898 /* HomeViewModel.swift */; };
 		B5215E8B21BD79A400531898 /* CoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E8A21BD79A400531898 /* CoreRouter.swift */; };
@@ -35,6 +34,8 @@
 		B586493021BC279600DE9D8D /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586492F21BC279600DE9D8D /* AppStoryboard.swift */; };
 		B586493621BC298200DE9D8D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586493521BC298200DE9D8D /* UIViewController.swift */; };
 		B586493821BC29AB00DE9D8D /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586493721BC29AB00DE9D8D /* AppFont.swift */; };
+		B58CDC7121BED0DF0010632D /* QuestionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CDC7021BED0DF0010632D /* QuestionHeaderViewCell.swift */; };
+		B58CDC7321BF48340010632D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58CDC7221BF48340010632D /* Home.storyboard */; };
 		F4ACBC25F246C84A84E080D6 /* libPods-QuizShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C123DBA74E3FD050D5E5E2 /* libPods-QuizShow.a */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +63,6 @@
 		B5215E7A21BD339C00531898 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B5215E7C21BD5C0900531898 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5215E7E21BD5D4D00531898 /* WinnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersViewController.swift; sourceTree = "<group>"; };
-		B5215E8021BD5DB900531898 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B5215E8321BD75F600531898 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		B5215E8721BD761800531898 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B5215E8A21BD79A400531898 /* CoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreRouter.swift; sourceTree = "<group>"; };
@@ -92,6 +92,8 @@
 		B586492F21BC279600DE9D8D /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		B586493521BC298200DE9D8D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B586493721BC29AB00DE9D8D /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		B58CDC7021BED0DF0010632D /* QuestionHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeaderViewCell.swift; sourceTree = "<group>"; };
+		B58CDC7221BF48340010632D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D9C123DBA74E3FD050D5E5E2 /* libPods-QuizShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuizShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				B5215EA021BDBD7300531898 /* QuestionViewCell.swift */,
+				B58CDC7021BED0DF0010632D /* QuestionHeaderViewCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -247,8 +250,8 @@
 		B586492E21BC273700DE9D8D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B58CDC7221BF48340010632D /* Home.storyboard */,
 				B586492F21BC279600DE9D8D /* AppStoryboard.swift */,
-				B5215E8021BD5DB900531898 /* Home.storyboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -400,7 +403,7 @@
 				B5693CD421B8580300537D6F /* LaunchScreen.storyboard in Resources */,
 				B5693CD121B8580300537D6F /* Assets.xcassets in Resources */,
 				B5693CCF21B8580100537D6F /* Main.storyboard in Resources */,
-				B5215E8121BD5DB900531898 /* Home.storyboard in Resources */,
+				B58CDC7321BF48340010632D /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +464,7 @@
 				B5215E8821BD761800531898 /* HomeViewModel.swift in Sources */,
 				B5215E8B21BD79A400531898 /* CoreRouter.swift in Sources */,
 				B5215E9821BD7D2A00531898 /* UserModel.swift in Sources */,
+				B58CDC7121BED0DF0010632D /* QuestionHeaderViewCell.swift in Sources */,
 				B5215E8F21BD79CE00531898 /* BaseFactory.swift in Sources */,
 				B5215E7D21BD5C0900531898 /* HomeViewController.swift in Sources */,
 				B5693CCA21B8580100537D6F /* AppDelegate.swift in Sources */,

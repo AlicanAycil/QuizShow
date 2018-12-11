@@ -8,5 +8,6 @@ target 'QuizShow' do
    pod 'PromiseKit'
    pod 'SnapKit'
    pod 'NVActivityIndicatorView'
+   pod 'UICircularProgressRing'
    pod 'SwiftWebSocket' , :git => "https://github.com/tidwall/SwiftWebSocket"
 end
