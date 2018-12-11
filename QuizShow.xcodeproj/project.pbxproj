@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A111FE021BFB5F90072B20B /* WebSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A111FDF21BFB5F90072B20B /* WebSocketViewController.swift */; };
 		B5215E7721BD254100531898 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E7621BD254100531898 /* BaseViewController.swift */; };
 		B5215E7B21BD339C00531898 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E7A21BD339C00531898 /* UIColor.swift */; };
 		B5215E7D21BD5C0900531898 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215E7C21BD5C0900531898 /* HomeViewController.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A111FDF21BFB5F90072B20B /* WebSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketViewController.swift; sourceTree = "<group>"; };
 		787930DA0F3EB535F0EBD143 /* Pods-QuizShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizShow/Pods-QuizShow.debug.xcconfig"; sourceTree = "<group>"; };
 		8D531D4DE570187B3FC2A87B /* Pods-QuizShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuizShow/Pods-QuizShow.release.xcconfig"; sourceTree = "<group>"; };
 		B5215E7621BD254100531898 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				B5215E7C21BD5C0900531898 /* HomeViewController.swift */,
 				B5693CCB21B8580100537D6F /* QuestionsViewController.swift */,
 				B5215E7E21BD5D4D00531898 /* WinnersViewController.swift */,
+				5A111FDF21BFB5F90072B20B /* WebSocketViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				B586493621BC298200DE9D8D /* UIViewController.swift in Sources */,
 				B5215E8821BD761800531898 /* HomeViewModel.swift in Sources */,
 				B5215E8B21BD79A400531898 /* CoreRouter.swift in Sources */,
+				5A111FE021BFB5F90072B20B /* WebSocketViewController.swift in Sources */,
 				B5215E9821BD7D2A00531898 /* UserModel.swift in Sources */,
 				B58CDC7121BED0DF0010632D /* QuestionHeaderViewCell.swift in Sources */,
 				B5215E8F21BD79CE00531898 /* BaseFactory.swift in Sources */,

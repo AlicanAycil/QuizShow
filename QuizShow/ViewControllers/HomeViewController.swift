@@ -154,6 +154,8 @@ class HomeViewController: BaseViewController {
             let rootController = UINavigationController(rootViewController: controller)
             rootController.modalPresentationStyle = .overFullScreen
             self.present(rootController, animated: true, completion: nil)
+//            let controller = AppStoryboard.Home.view(controllerClass: WebSocketViewController.self)
+//            self.present(controller, animated: true, completion: nil)
         }
         self.startButtonBgView.addSubview(startButton)
         

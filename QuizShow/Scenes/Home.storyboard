@@ -26,6 +26,21 @@
             </objects>
             <point key="canvasLocation" x="-108" y="156"/>
         </scene>
+        <!--Web Socket View Controller-->
+        <scene sceneID="ixs-FE-6fy">
+            <objects>
+                <viewController storyboardIdentifier="WebSocketViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MjU-Yq-xcW" customClass="WebSocketViewController" customModule="QuizShow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aqJ-2w-rTt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YLF-O9-usy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjJ-Wm-c4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="834"/>
+        </scene>
         <!--Questions View Controller-->
         <scene sceneID="0yw-pZ-0Ee">
             <objects>
